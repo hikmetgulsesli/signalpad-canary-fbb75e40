@@ -1,0 +1,876 @@
+[
+  {
+    "screenId": "410b76a82c1e42ecbfdc7119a3b7260d",
+    "screenTitle": "Record Editor - SignalPad Canary",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 176
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 180
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 184
+      },
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Save Now",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 283
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 286
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 149
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 222
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 247
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 254
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 261
+      },
+      {
+        "type": "input",
+        "label": "Provide detailed operational context...",
+        "inputType": "textarea",
+        "placeholder": "Provide detailed operational context...",
+        "line": 274
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 214
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 176
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 180
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 184
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 154
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 157
+      },
+      {
+        "type": "button",
+        "label": "Discard",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "Save Now",
+        "line": 199
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 283
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 286
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 149
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 222
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 247
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 254
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 261
+      },
+      {
+        "type": "input",
+        "label": "Provide detailed operational context...",
+        "inputType": "textarea",
+        "placeholder": "Provide detailed operational context...",
+        "line": 274
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 18,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "e9a8318ef11943188856ce4e79f84a86",
+    "screenTitle": "Record Operations - SignalPad Canary",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "All",
+        "line": 231
+      },
+      {
+        "type": "button",
+        "label": "Active",
+        "line": 232
+      },
+      {
+        "type": "button",
+        "label": "Archived",
+        "line": 233
+      },
+      {
+        "type": "button",
+        "label": "Select Record",
+        "line": 266
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 281
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 296
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 311
+      },
+      {
+        "type": "input",
+        "label": "Search records...",
+        "inputType": "text",
+        "placeholder": "Search records...",
+        "line": 129
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 246
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 258
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 273
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 288
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 303
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 152
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 160
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 132
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 135
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 178
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "All",
+        "line": 231
+      },
+      {
+        "type": "button",
+        "label": "Active",
+        "line": 232
+      },
+      {
+        "type": "button",
+        "label": "Archived",
+        "line": 233
+      },
+      {
+        "type": "button",
+        "label": "Select Record",
+        "line": 266
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 281
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 296
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 311
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search records...",
+        "inputType": "text",
+        "placeholder": "Search records...",
+        "line": 129
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 246
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 258
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 273
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 288
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 303
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 22,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "9a10003fbabb4565bfffcdc6a936a9fe",
+    "screenTitle": "Settings and Preferences - SignalPad Canary",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 230
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 234
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 249
+      },
+      {
+        "type": "button",
+        "label": "Save Preferences",
+        "line": 252
+      },
+      {
+        "type": "button",
+        "label": "Add new filter",
+        "line": 360
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 373
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 374
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 384
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 385
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 395
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 396
+      },
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 203
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 276
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 290
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 304
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 325
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 333
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 341
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 226
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 230
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 234
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 194
+      },
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 212
+      },
+      {
+        "type": "button",
+        "label": "Reset to Defaults",
+        "line": 249
+      },
+      {
+        "type": "button",
+        "label": "Save Preferences",
+        "line": 252
+      },
+      {
+        "type": "button",
+        "label": "Add new filter",
+        "line": 360
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 373
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 374
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 384
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 385
+      },
+      {
+        "type": "button",
+        "label": "edit",
+        "line": 395
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 396
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search...",
+        "inputType": "text",
+        "placeholder": "Search...",
+        "line": 203
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 276
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 290
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 304
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 325
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 333
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 341
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 23,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "ab68a4ade47c4325afd2e996efec6295",
+    "screenTitle": "Empty and Error Recovery - SignalPad Canary",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      },
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "Active Filters (3)",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Create First Record",
+        "line": 196
+      },
+      {
+        "type": "button",
+        "label": "View System Status",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "Retry Connection",
+        "line": 230
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 136
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 148
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "sensors",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 123
+      },
+      {
+        "type": "button",
+        "label": "Active Filters (3)",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "Clear Filters",
+        "line": 193
+      },
+      {
+        "type": "button",
+        "label": "Create First Record",
+        "line": 196
+      },
+      {
+        "type": "button",
+        "label": "View System Status",
+        "line": 227
+      },
+      {
+        "type": "button",
+        "label": "Retry Connection",
+        "line": 230
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 11,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
