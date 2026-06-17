@@ -1,0 +1,46 @@
+[
+  {
+    "screenId": "410b76a82c1e42ecbfdc7119a3b7260d",
+    "title": "Record Editor - SignalPad Canary",
+    "htmlFile": "410b76a82c1e42ecbfdc7119a3b7260d.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzI5MTNjYzAzOWIzYjRiMGZhMjBjYzMwYzBhZjk5NTMxEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTI0NjExMDE2NTg2OTkwNDYwNQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalpad-canary-fbb75e40/stitch/410b76a82c1e42ecbfdc7119a3b7260d.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "e9a8318ef11943188856ce4e79f84a86",
+    "title": "Record Operations - SignalPad Canary",
+    "htmlFile": "e9a8318ef11943188856ce4e79f84a86.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzAwMzc1ZjA4ODA1ZjQ4OWZiMDc5MTMyOWJkNThjZTlkEgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTI0NjExMDE2NTg2OTkwNDYwNQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalpad-canary-fbb75e40/stitch/e9a8318ef11943188856ce4e79f84a86.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "9a10003fbabb4565bfffcdc6a936a9fe",
+    "title": "Settings and Preferences - SignalPad Canary",
+    "htmlFile": "9a10003fbabb4565bfffcdc6a936a9fe.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzZmZWJkMTM3NmYwNTRjYWViZGI3MjQwNDQxZDA0N2U4EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTI0NjExMDE2NTg2OTkwNDYwNQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalpad-canary-fbb75e40/stitch/9a10003fbabb4565bfffcdc6a936a9fe.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "ab68a4ade47c4325afd2e996efec6295",
+    "title": "Empty and Error Recovery - SignalPad Canary",
+    "htmlFile": "ab68a4ade47c4325afd2e996efec6295.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ8Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpbCiVodG1sXzM3NmU4MWIyMzE0NDQ1OTE5YmFlNzlhZTZmM2VhMDM3EgsSBxCN19Wi9xcYAZIBJAoKcHJvamVjdF9pZBIWQhQxMTI0NjExMDE2NTg2OTkwNDYwNQ&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/signalpad-canary-fbb75e40/stitch/ab68a4ade47c4325afd2e996efec6295.html",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  }
+]

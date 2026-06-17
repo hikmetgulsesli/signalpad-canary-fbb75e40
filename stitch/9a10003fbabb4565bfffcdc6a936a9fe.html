@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings - SignalPad Canary</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary": "#ffffff",
+                "inverse-surface": "#2e3132",
+                "background": "#f8f9fb",
+                "on-error": "#ffffff",
+                "surface": "#f8f9fb",
+                "secondary-fixed": "#d7e3fb",
+                "on-surface": "#191c1e",
+                "secondary": "#535f73",
+                "surface-container": "#edeef0",
+                "secondary-fixed-dim": "#bbc7de",
+                "primary-fixed": "#dae2ff",
+                "on-tertiary-fixed-variant": "#812800",
+                "outline-variant": "#c3c6d6",
+                "inverse-primary": "#b2c5ff",
+                "on-primary": "#ffffff",
+                "on-secondary": "#ffffff",
+                "tertiary-container": "#a33500",
+                "on-secondary-fixed-variant": "#3b475b",
+                "on-surface-variant": "#434654",
+                "tertiary-fixed": "#ffdbcf",
+                "surface-variant": "#e1e2e4",
+                "on-primary-fixed-variant": "#0040a2",
+                "error": "#ba1a1a",
+                "surface-container-highest": "#e1e2e4",
+                "on-secondary-container": "#576377",
+                "surface-container-low": "#f3f4f6",
+                "surface-bright": "#f8f9fb",
+                "surface-dim": "#d9dadc",
+                "on-primary-container": "#c4d2ff",
+                "primary": "#003d9b",
+                "tertiary": "#7b2600",
+                "on-tertiary-container": "#ffc6b2",
+                "surface-tint": "#0c56d0",
+                "outline": "#737685",
+                "surface-container-high": "#e7e8ea",
+                "primary-fixed-dim": "#b2c5ff",
+                "on-secondary-fixed": "#101c2d",
+                "tertiary-fixed-dim": "#ffb59b",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#001848",
+                "inverse-on-surface": "#f0f1f3",
+                "primary-container": "#0052cc",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary-fixed": "#380d00",
+                "secondary-container": "#d4e0f8",
+                "error-container": "#ffdad6",
+                "on-background": "#191c1e"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem"
+        },
+        "spacing": {
+                "lg": "24px",
+                "base": "4px",
+                "xs": "4px",
+                "md": "16px",
+                "margin-mobile": "16px",
+                "sm": "8px",
+                "xl": "32px",
+                "margin-desktop": "24px",
+                "gutter": "16px"
+        },
+        "fontFamily": {
+                "label-sm": [
+                        "Inter"
+                ],
+                "headline-sm": [
+                        "Inter"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "body-md": [
+                        "Inter"
+                ],
+                "label-md": [
+                        "Inter"
+                ],
+                "headline-lg": [
+                        "Inter"
+                ],
+                "mono-data": [
+                        "monospace"
+                ],
+                "body-sm": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Inter"
+                ]
+        },
+        "fontSize": {
+                "label-sm": [
+                        "11px",
+                        {
+                                "lineHeight": "14px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-sm": [
+                        "18px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-lg": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-md": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "mono-data": [
+                        "13px",
+                        {
+                                "lineHeight": "20px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "body-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+  body {
+    background-color: #F4F5F7; /* Theme Background Level 0 */
+  }
+</style>
+</head>
+<body class="bg-background text-on-surface antialiased flex flex-col h-screen overflow-hidden">
+<!-- TopAppBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface text-primary dark:text-inverse-primary font-headline-sm text-headline-sm docked full-width top-0 border-b border-outline-variant dark:border-outline flat no shadows flex justify-between items-center w-full px-md h-16 shrink-0 z-50 relative">
+<div class="flex items-center gap-md">
+<!-- Assuming a menu toggle icon for mobile, hidden on md -->
+<button class="md:hidden p-xs rounded hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors duration-200">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight">SignalPad Canary</span>
+</div>
+<!-- Search Bar on Right -->
+<div class="flex-1 flex justify-end items-center gap-md">
+<div class="hidden md:flex relative w-64">
+<span class="material-symbols-outlined absolute left-sm top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-8 pl-8 pr-sm py-xs bg-surface-container-low border border-outline-variant rounded-DEFAULT focus:outline-none focus:border-primary text-body-sm text-on-surface transition-colors duration-200" placeholder="Search..." type="text"/>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors duration-200">
+<span class="material-symbols-outlined text-[24px]">sensors</span>
+</button>
+<button class="p-xs rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors duration-200">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+<button class="p-xs rounded text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-low dark:hover:bg-surface-variant transition-colors duration-200">
+<span class="material-symbols-outlined text-[24px]">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<div class="flex flex-1 overflow-hidden relative">
+<!-- SideNavBar -->
+<aside class="hidden md:flex flex-col p-md space-y-base bg-surface-container-low dark:bg-on-surface-variant text-primary dark:text-primary-fixed font-label-md text-label-md border-r border-outline-variant dark:border-outline flat no shadows w-[240px] shrink-0 h-full overflow-y-auto z-40">
+<div class="mb-lg pb-sm border-b border-outline-variant">
+<h2 class="font-headline-sm text-headline-sm text-on-surface dark:text-inverse-on-surface font-bold">SignalPad Operations</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Canary v1.0.4</p>
+</div>
+<nav class="flex-1 flex flex-col gap-xs">
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">fiber_manual_record</span>
+<span>Record Operations</span>
+</a>
+<a class="flex items-center gap-sm p-sm rounded-lg text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-high dark:hover:bg-inverse-surface transition-all duration-200 ease-in-out group" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-primary transition-colors">edit_note</span>
+<span>Editor</span>
+</a>
+<a class="flex items-center gap-sm p-sm bg-secondary-container dark:bg-secondary-fixed-dim text-on-secondary-container dark:text-on-secondary-fixed font-bold rounded-lg transition-all duration-200 ease-in-out" href="#">
+<span class="material-symbols-outlined text-[20px] font-variation-settings: 'FILL' 1;">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 overflow-y-auto p-margin-mobile md:p-margin-desktop bg-background pb-32">
+<div class="max-w-5xl mx-auto">
+<header class="mb-xl flex flex-col md:flex-row md:items-end justify-between gap-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-xs">Preferences</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Configure operational defaults and system density.</p>
+</div>
+<div class="flex items-center gap-sm">
+<button class="px-md py-sm bg-surface-container-lowest border border-outline-variant text-secondary font-label-md text-label-md rounded-DEFAULT hover:bg-surface-container-low transition-colors h-8 flex items-center justify-center">
+                        Reset to Defaults
+                    </button>
+<button class="px-md py-sm bg-primary-container text-on-primary font-label-md text-label-md rounded-DEFAULT hover:bg-primary transition-colors h-8 flex items-center justify-center relative overflow-hidden group" id="saveBtn">
+<span class="relative z-10 flex items-center gap-xs">Save Preferences</span>
+<div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-200"></div>
+</button>
+</div>
+</header>
+<!-- Settings Grid Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Main Settings Column -->
+<div class="lg:col-span-8 flex flex-col gap-lg">
+<!-- Workflow Preferences Card -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm">
+<div class="mb-md flex items-center gap-sm border-b border-outline-variant pb-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Workflow Preferences</h2>
+</div>
+<div class="space-y-lg">
+<!-- Default View Setting -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+<div class="flex-1">
+<label class="font-label-md text-label-md text-on-surface block mb-xs">Default Operations View</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select the initial layout loaded upon login.</p>
+</div>
+<div class="w-full sm:w-64">
+<select class="w-full h-8 pl-sm pr-lg py-xs bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:outline-none focus:border-primary text-body-sm text-on-surface appearance-none">
+<option value="dashboard">Dashboard Overview</option>
+<option selected="" value="list">List Mode (Dense)</option>
+<option value="timeline">Timeline View</option>
+</select>
+</div>
+</div>
+<!-- Refresh Interval -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-md">
+<div class="flex-1">
+<label class="font-label-md text-label-md text-on-surface block mb-xs">Telemetry Refresh Interval</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Data polling frequency for live panels.</p>
+</div>
+<div class="w-full sm:w-64 flex items-center relative">
+<input class="w-full h-8 pl-sm pr-12 py-xs bg-surface-container-lowest border border-outline-variant rounded-DEFAULT focus:outline-none focus:border-primary text-body-sm text-on-surface font-mono-data text-right" max="300" min="5" type="number" value="15"/>
+<span class="absolute right-0 top-0 bottom-0 px-sm bg-surface-container-low border-l border-outline-variant flex items-center justify-center font-mono-data text-mono-data text-on-surface-variant rounded-r-DEFAULT pointer-events-none">
+                                        sec
+                                    </span>
+</div>
+</div>
+<!-- Auto-Collapse Panels -->
+<div class="flex items-start justify-between gap-md pt-sm">
+<div class="flex-1">
+<label class="font-label-md text-label-md text-on-surface block mb-xs cursor-pointer" for="toggle-collapse">Auto-Collapse Inactive Panels</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automatically hide secondary data streams when not in focus to preserve screen space.</p>
+</div>
+<!-- Custom Toggle -->
+<div class="relative inline-block w-10 h-5 align-middle select-none transition duration-200 ease-in mt-1">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 appearance-none cursor-pointer border-surface-container-low transition-transform duration-200 ease-in-out checked:translate-x-5 checked:border-primary-container z-10" id="toggle-collapse" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-5 rounded-full bg-surface-container-highest cursor-pointer transition-colors duration-200 ease-in-out checked:bg-primary" for="toggle-collapse"></label>
+<style>
+                                        .toggle-checkbox:checked + .toggle-label { background-color: #0052cc; }
+                                        .toggle-checkbox:checked { border-color: #0052cc; right: 0; }
+                                    </style>
+</div>
+</div>
+</div>
+</section>
+<!-- Notification Settings Card -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm">
+<div class="mb-md flex items-center gap-sm border-b border-outline-variant pb-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">notifications_active</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Notification Density</h2>
+</div>
+<div class="space-y-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-sm">Configure verbosity and routing for system alerts.</p>
+<!-- Density Radio Group -->
+<div class="flex flex-col gap-sm">
+<label class="flex items-start gap-sm p-sm border border-outline-variant rounded-DEFAULT cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="mt-1 h-4 w-4 text-primary focus:ring-primary border-outline-variant" name="density" type="radio" value="high"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Verbose (All Events)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-xs">Log and notify on every minor state change. Recommended for deep debugging.</span>
+</div>
+</label>
+<label class="flex items-start gap-sm p-sm border border-primary bg-primary-fixed-dim/10 rounded-DEFAULT cursor-pointer transition-colors relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<input checked="" class="mt-1 h-4 w-4 text-primary focus:ring-primary border-primary" name="density" type="radio" value="standard"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Standard (Warnings &amp; Critical)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-xs">Default operational mode. Suppresses info-level noise.</span>
+</div>
+<span class="ml-auto bg-surface-container border border-outline-variant text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded">Default</span>
+</label>
+<label class="flex items-start gap-sm p-sm border border-outline-variant rounded-DEFAULT cursor-pointer hover:bg-surface-container-low transition-colors">
+<input class="mt-1 h-4 w-4 text-primary focus:ring-primary border-outline-variant" name="density" type="radio" value="minimal"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface block">Minimal (Critical Only)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-xs">Only alerts on system failures or threshold breaches.</span>
+</div>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- Secondary Sidebar Column (Filters) -->
+<div class="lg:col-span-4 flex flex-col gap-lg">
+<!-- Saved Filters Management Card -->
+<section class="bg-surface-container-lowest border border-outline-variant rounded-lg p-lg shadow-sm h-full flex flex-col">
+<div class="mb-md flex items-center justify-between border-b border-outline-variant pb-sm">
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">filter_list</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Saved Filters</h2>
+</div>
+<button class="text-primary hover:bg-primary-fixed p-xs rounded transition-colors" title="Add new filter">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Manage pre-configured query filters for the Data Editor.</p>
+<div class="flex-1 overflow-y-auto pr-sm -mr-sm space-y-sm">
+<!-- Filter Item -->
+<div class="group flex items-center justify-between p-sm border border-surface-container-highest bg-surface hover:border-outline-variant rounded-DEFAULT transition-colors">
+<div class="flex items-center gap-sm overflow-hidden">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">label</span>
+<span class="font-mono-data text-mono-data text-on-surface truncate">status:ERROR AND t&gt;24h</span>
+</div>
+<div class="flex opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+<button class="p-xs text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<!-- Filter Item -->
+<div class="group flex items-center justify-between p-sm border border-surface-container-highest bg-surface hover:border-outline-variant rounded-DEFAULT transition-colors">
+<div class="flex items-center gap-sm overflow-hidden">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">label</span>
+<span class="font-mono-data text-mono-data text-on-surface truncate">region:US-EAST AND load&gt;80</span>
+</div>
+<div class="flex opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+<button class="p-xs text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<!-- Filter Item -->
+<div class="group flex items-center justify-between p-sm border border-surface-container-highest bg-surface hover:border-outline-variant rounded-DEFAULT transition-colors">
+<div class="flex items-center gap-sm overflow-hidden">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">label</span>
+<span class="font-mono-data text-mono-data text-on-surface truncate">type:MAINTENANCE_LOG</span>
+</div>
+<div class="flex opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="p-xs text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[16px]">edit</span></button>
+<button class="p-xs text-on-surface-variant hover:text-error transition-colors"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+</main>
+</div>
+<!-- Toast Notification (Hidden by default) -->
+<div class="fixed bottom-lg left-1/2 -translate-x-1/2 bg-inverse-surface text-on-tertiary px-md py-sm rounded-lg border border-[#DFE1E6] shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center gap-sm transform translate-y-20 opacity-0 transition-all duration-300 z-50 pointer-events-none" id="toast">
+<span class="material-symbols-outlined text-[#36B37E] text-[20px]">check_circle</span>
+<span class="font-body-sm text-body-sm">Preferences saved successfully.</span>
+</div>
+<script>
+      // Simple Toast Logic
+      const saveBtn = document.getElementById('saveBtn');
+      const toast = document.getElementById('toast');
+      let toastTimeout;
+
+      saveBtn.addEventListener('click', () => {
+          // Visual feedback on button
+          const originalText = saveBtn.querySelector('span').innerHTML;
+          saveBtn.querySelector('span').innerHTML = '<span class="material-symbols-outlined animate-spin text-[16px]">sync</span> Saving...';
+          saveBtn.classList.add('opacity-80', 'cursor-wait');
+
+          // Simulate network request
+          setTimeout(() => {
+              saveBtn.querySelector('span').innerHTML = originalText;
+              saveBtn.classList.remove('opacity-80', 'cursor-wait');
+              
+              // Show toast
+              toast.classList.remove('translate-y-20', 'opacity-0');
+              toast.classList.add('translate-y-0', 'opacity-100');
+
+              // Hide toast after 3s
+              clearTimeout(toastTimeout);
+              toastTimeout = setTimeout(() => {
+                  toast.classList.remove('translate-y-0', 'opacity-100');
+                  toast.classList.add('translate-y-20', 'opacity-0');
+              }, 3000);
+          }, 600);
+      });
+  </script>
+</body></html>

@@ -1,0 +1,38 @@
+[
+  {
+    "screenId": "410b76a82c1e42ecbfdc7119a3b7260d",
+    "name": "Record Editor - SignalPad Canary",
+    "type": "form",
+    "description": "Record Editor - SignalPad Canary screen",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "e9a8318ef11943188856ce4e79f84a86",
+    "name": "Record Operations - SignalPad Canary",
+    "type": "app-screen",
+    "description": "Record Operations - SignalPad Canary screen",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "9a10003fbabb4565bfffcdc6a936a9fe",
+    "name": "Settings and Preferences - SignalPad Canary",
+    "type": "settings",
+    "description": "Settings and Preferences - SignalPad Canary screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "ab68a4ade47c4325afd2e996efec6295",
+    "name": "Empty and Error Recovery - SignalPad Canary",
+    "type": "error",
+    "description": "Empty and Error Recovery - SignalPad Canary screen",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  }
+]
